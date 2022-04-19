@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projet Card</title>
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+  </head>
+  <!-- Architecture des class et id CSS avec BEM -->
+  <body>
+    <section id="projects" class="projects">
+      <h2 class="projects__title">Mes projets</h2>
+      <section id="cards" class="cards">
+        <div class="card">
+          <h3 class="card__title">Mon premier projet Javascript</h3>
+          <img
+            class="card__img"
+            src="./assets/images/javascript.jpg"
+            alt="image d'illustration javascript"
+          />
+          <p class="card__text">
+            Ce projet Javascript est un site Portfolio de tous mes projets sous
+            forme de cartes.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Mon premier projet React</h3>
+          <img
+            class="card__img"
+            src="./assets/images/react.jpg"
+            alt="image d'illustration react"
+          />
+          <p class="card__text">
+            Ce projet React n'est pas encore publié sur le site
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="card__title">Mon premier projet Node</h3>
+          <img
+            class="card__img"
+            src="./assets/images/node.jpg"
+            alt="image d'illustration node"
+          />
+          <p class="card__text">
+            Ce projet Node n'est pas encore publié sur le site
+          </p>
+        </div>
+      </section>
+    </section>
+    <section id="new-project" class="new-project">
+      <h2 class="new-project__title">Ajouter un projet à mon portfolio</h2>
+      <form id="new-project__form" class="new-project__form">
+        <div class="new-project-form__input-group">
+          <label for="project-title">Titre du projet</label>
+          <input type="text" name="project-title" id="project-title" />
+        </div>
+        <div class="new-project-form__input-group">
+          <label for="project-img-link">Lien vers une image en ligne</label>
+          <input type="text" name="project-img-link" id="project-img-link" />
+        </div>
+        <div
+          class="new-project-form__input-group new-project-form__input-group--textarea"
+        >
+          <label for="project-text">Description du projet</label>
+          <textarea name="project-text" id="project-text" rows="10"></textarea>
+        </div>
+        <button class="new-project__button" type="submit">
+          Créer le projet
+        </button>
+      </form>
+    </section>
+  </body>
+</html>
